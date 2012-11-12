@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/srv/lyst/tests/functional/api'
+let g:netrw_dirhist_2='/srv/lyst/media'
+let g:netrw_dirhist_3='/home/maciej/git/dotfiles/.vim/ruby/command-t'
+let g:netrw_dirhist_4='/srv/lyst'
+let g:netrw_dirhist_5='/srv/lyst/src/ssaw'
