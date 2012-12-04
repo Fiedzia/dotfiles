@@ -2,6 +2,16 @@
 
 import os
 import sys
+import subprocess
+
+def setup_git():
+    """
+    """
+    #nice git log
+    subprocess.call(['git', 'config', '--global', 'alias.lg',  "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit", '--'])
+    subprocess.call(['git', 'config', '--global', 'alias.lgp', "log -p --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit", '--'])
+
+
 
 BASEDIR = os.path.dirname(os.path.realpath(__file__))
 for fname in ('.vimrc', '.vim'):
