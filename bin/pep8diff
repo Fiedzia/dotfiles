@@ -1,0 +1,13 @@
+#!/usr/bin/env fish
+
+#take file name as an argument, copy to /tmp, 
+set origname $argv[1]
+set tmpname (tempfile -d /tmp)
+cp $origname $tmpname
+pep8ify -w -n $tmpname
+
+#vimdiff $tmpname $origname
+meld $tmpname $origname
+
+
+

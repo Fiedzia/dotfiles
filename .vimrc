@@ -2,9 +2,16 @@ set tabstop=2
 set shiftwidth=2
 set noexpandtab
 
+set shell=/bin/sh
+call pathogen#infect()
 filetype plugin indent on
 
-call pathogen#infect()
+
+
+"Alt-Left/Right arrow for tab switching
+:map <M-Right> :tabnext<CR>
+:map <M-Left> :tabprevious<CR>
+
 
 "Ctrl+O for CommandT file opener
 map <C-o> :CommandT<CR>
