@@ -12,7 +12,8 @@ filetype plugin indent on
 :map <M-Right> :tabnext<CR>
 :map <M-Left> :tabprevious<CR>
 
-
+"t for tagbar
+map t :TagbarToggle<CR>
 "Ctrl+O for CommandT file opener
 map <C-o> :CommandT<CR>
 "insert debugger call for Ctrl+d
