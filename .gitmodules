@@ -20,3 +20,6 @@
 [submodule ".vim/bundle/VxLib"]
 	path = .vim/bundle/VxLib
 	url = git@github.com:vim-scripts/VxLib.git
+[submodule ".vim/bundle/vundle"]
+	path = .vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git

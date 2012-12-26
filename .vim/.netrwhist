@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/srv/lyst/src/ssaw/portal'
-let g:netrw_dirhist_2='/srv/lyst/src/ssaw/api/models'
-let g:netrw_dirhist_3='/srv/lyst'
-let g:netrw_dirhist_4='/srv/lyst/src/ssaw/portal/views'

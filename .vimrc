@@ -4,6 +4,7 @@ set noexpandtab
 
 set shell=/bin/sh
 call pathogen#infect()
+
 filetype plugin indent on
 
 
