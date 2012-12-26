@@ -7,6 +7,13 @@ call pathogen#infect()
 
 filetype plugin indent on
 
+"set up menu
+source $VIMRUNTIME/menu.vim
+source ~/.vim/menu.vim
+set wildmenu
+set cpo-=<
+set wcm=<C-Z>
+map m :emenu Utils.<C-Z>
 
 
 "Alt-Left/Right arrow for tab switching
