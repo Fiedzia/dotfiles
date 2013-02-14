@@ -21,8 +21,8 @@ map m :emenu Utils.<C-Z>
 :map <M-Left> :tabprevious<CR>
 
 "Ctrl+space for code completion
-"imap <C-Space> <C-x><C-o>
-"imap <C-@> <C-Space>
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
 
 "t for tagbar
 map t :TagbarToggle<CR>
@@ -33,4 +33,10 @@ map <C-d> i<ESC>[8~<CR>import pudb; pudb.set_trace()
 let g:CommandTMaxFiles=100000
 let g:CommandTMaxCachedDirectories=100
 set wildignore+=*.o,*.obj,.git,*.pyc
+
+
+"color schema
+"source ~/.vim/misc/vim-distinguished/colors/distinguished.vim
+source ~/.vim/misc/colors/burnttoast256.vim
+
 
