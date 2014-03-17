@@ -22,4 +22,4 @@ for fname in ('.vimrc', '.vim'):
         os.rename(full_name, full_name+'_old')
     print  os.path.join(BASEDIR, fname), 'fname', full_name
     os.symlink(os.path.join(BASEDIR, fname), full_name)
-
+setup_git()
