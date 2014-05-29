@@ -1,3 +1,5 @@
-:menu Utils.item1	:do something
+:menu Utils.Python.flake8	:call Flake8()<CR>
 :menu Utils.-Sep-	:
-:menu Utils.item2	:do something different
+:menu Utils.Git.Blame	:Gblame<CR>
+:menu Utils.Git.Status	:Gstatus<CR>
+
