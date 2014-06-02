@@ -38,3 +38,6 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 "color schema
 "source ~/.vim/misc/vim-distinguished/colors/distinguished.vim
 source ~/.vim/misc/colors/burnttoast256.vim
+
+"snippets
+let g:UltiSnipsExpandTrigger="<C-e>"

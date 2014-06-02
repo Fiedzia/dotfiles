@@ -6,23 +6,29 @@
 	url = https://github.com/majutsushi/tagbar
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
-	url = git@github.com:nvie/vim-flake8.git
+	url = https://github.com/nvie/vim-flake8.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
-	url = git@github.com:davidhalter/jedi-vim.git
+	url = https://github.com/davidhalter/jedi-vim.git
 [submodule ".vim/bundle/vimuiex"]
 	path = .vim/bundle/vimuiex
-	url = git@github.com:vim-scripts/vimuiex.git
+	url = https://github.com/vim-scripts/vimuiex.git
 [submodule ".vim/bundle/VxLib"]
 	path = .vim/bundle/VxLib
-	url = git@github.com:vim-scripts/VxLib.git
+	url = https://github.com/vim-scripts/VxLib.git
 [submodule ".vim/bundle/vundle"]
 	path = .vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
 [submodule ".vim/bundle/unite.vim"]
 	path = .vim/bundle/unite.vim
-	url = git@github.com:Shougo/unite.vim.git
+	url = https://github.com/Shougo/unite.vim.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
