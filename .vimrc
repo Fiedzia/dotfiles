@@ -28,7 +28,8 @@ imap <C-@> <C-Space>
 map t :TagbarToggle<CR>
 "Ctrl+O for CommandT file opener
 "map <C-o> :CommandT<CR>
-map <C-o> :Unite file_rec<CR>i
+"map <C-o> :Unite file_rec<CR>i
+map <C-o> :Tex<CR>
 
 let g:CommandTMaxFiles=100000
 let g:CommandTMaxCachedDirectories=100
