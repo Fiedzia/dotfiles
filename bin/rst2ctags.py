@@ -61,6 +61,9 @@ class Tag(object):
     def __cmp__(self, other):
         return cmp(str(self), str(other))
 
+    def __lt__(self, other):
+        return str(self) < str(other)
+
     @staticmethod
     def section(section):
         tagName = ctagNameEscape(section.name)
@@ -209,10 +212,10 @@ def main():
     if options.tagfile == '-':
         output = sys.stdout
     else:
-        output = open(options.tagfile, 'wb')
+        output = open(options.tagfile, 'w', encoding='utf-8')
 
     for filename in args:
-        f = open(filename, 'rb')
+        f = open(filename, 'r', encoding='utf-8')
         lines = f.read().splitlines()
         f.close()
         sections = findSections(filename, lines)
