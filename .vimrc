@@ -45,3 +45,6 @@ let g:UltiSnipsExpandTrigger="<C-e>"
 
 "set syntastic to use flake8 for python
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['python'],
+                           \ 'passive_filetypes': ['ruby'] }

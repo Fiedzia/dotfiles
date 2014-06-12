@@ -8,3 +8,4 @@ setlocal expandtab
 
 "insert debugger call for Ctrl+d
 map <C-d> i<ESC>[8~<CR>import pudb; pudb.set_trace()
+SyntasticCheck
