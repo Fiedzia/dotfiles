@@ -13,7 +13,7 @@ source ~/.vim/menu.vim
 set wildmenu
 set cpo-=<
 set wcm=<C-Z>
-map m :emenu Utils.<C-m>
+map m :emenu Utils.<C-Z>
 
 
 "Alt-Left/Right arrow for tab switching
@@ -42,3 +42,6 @@ source ~/.vim/misc/colors/burnttoast256.vim
 
 "snippets
 let g:UltiSnipsExpandTrigger="<C-e>"
+
+"set syntastic to use flake8 for python
+let g:syntastic_python_checkers = ['flake8']
