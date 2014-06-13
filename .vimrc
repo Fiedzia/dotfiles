@@ -26,8 +26,8 @@ set wcm=<C-Z>
 map m :emenu Utils.<C-Z>
 
 
-"use mouse
-set mouse=a
+"use mouse in normal mode only
+set mouse=n
 
 "Alt-Left/Right arrow for tab switching
 :map <M-Right> :tabnext<CR>
