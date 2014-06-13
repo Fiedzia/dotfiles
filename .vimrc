@@ -42,6 +42,8 @@ source ~/.vim/misc/colors/burnttoast256.vim
 
 "snippets
 let g:UltiSnipsExpandTrigger="<C-e>"
+let g:UltiSnipsSnippetDirectories=["maciej/snippets"]
+
 
 "set syntastic to use flake8 for python
 let g:syntastic_python_checkers = ['flake8']
