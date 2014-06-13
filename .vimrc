@@ -7,6 +7,16 @@ call pathogen#infect()
 
 filetype plugin indent on
 
+"F2 for paste-mode switch
+set pastetoggle=<F2>
+
+"F3 for nerdtree
+map <F3> :NERDTreeToggle<CR>
+
+"The following trick is a really small one, but a super-efficient one, since it strips off two full keystrokes from almost every Vim command:
+"nnoremap ; :
+
+
 "set up menu
 source $VIMRUNTIME/menu.vim
 source ~/.vim/menu.vim
@@ -15,6 +25,9 @@ set cpo-=<
 set wcm=<C-Z>
 map m :emenu Utils.<C-Z>
 
+
+"use mouse
+set mouse=a
 
 "Alt-Left/Right arrow for tab switching
 :map <M-Right> :tabnext<CR>
