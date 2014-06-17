@@ -7,6 +7,16 @@ call pathogen#infect()
 
 filetype plugin indent on
 
+"F2 for paste-mode switch
+set pastetoggle=<F2>
+
+"F3 for nerdtree
+map <F3> :NERDTreeToggle<CR>
+
+"The following trick is a really small one, but a super-efficient one, since it strips off two full keystrokes from almost every Vim command:
+"nnoremap ; :
+
+
 "set up menu
 source $VIMRUNTIME/menu.vim
 source ~/.vim/menu.vim
@@ -15,6 +25,9 @@ set cpo-=<
 set wcm=<C-Z>
 map <C-m> :emenu Utils.<C-Z>
 
+
+"use mouse in normal mode only
+set mouse=n
 
 "Alt-Left/Right arrow for tab switching
 :map <M-Right> :tabnext<CR>
@@ -28,7 +41,8 @@ imap <C-@> <C-Space>
 map t :TagbarToggle<CR>
 "Ctrl+O for CommandT file opener
 "map <C-o> :CommandT<CR>
-map <C-o> :Unite file_rec<CR>i
+"map <C-o> :Unite file_rec<CR>i
+map <C-o> :Tex<CR>
 
 let g:CommandTMaxFiles=100000
 let g:CommandTMaxCachedDirectories=100
@@ -41,3 +55,11 @@ source ~/.vim/misc/colors/burnttoast256.vim
 
 "snippets
 let g:UltiSnipsExpandTrigger="<C-e>"
+let g:UltiSnipsSnippetDirectories=["maciej/snippets"]
+
+
+"set syntastic to use flake8 for python
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['python'],
+                           \ 'passive_filetypes': ['ruby'] }
