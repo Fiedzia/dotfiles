@@ -1,6 +1,10 @@
-set tabstop=2
-set shiftwidth=2
-set noexpandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smarttab
+set expandtab
+
+
 
 set shell=/bin/sh
 call pathogen#infect()
@@ -27,11 +31,26 @@ map <C-m> :emenu Utils.<C-Z>
 
 
 "use mouse in normal mode only
-set mouse=n
+"set mouse=n
 
 "Alt-Left/Right arrow for tab switching
-:map <M-Right> :tabnext<CR>
-:map <M-Left> :tabprevious<CR>
+fun! TabNext()
+  tabnext
+  return ''
+endfun
+
+fun! TabPrev()
+  tabprev
+  return ''
+endfun
+
+inore <A-Right> <C-R>=TabNext()<CR>
+inore <A-Left> <C-R>=TabPrev()<CR>
+nnore <A-Right> gt
+nnore <A-Left> gT
+
+
+
 
 "Ctrl+space for code completion
 imap <C-Space> <C-x><C-o>
