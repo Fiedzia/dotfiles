@@ -57,7 +57,7 @@ imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
 "t for tagbar
-map t :TagbarToggle<CR>
+nnoremap t :TagbarToggle<CR>
 "Ctrl+O for CommandT file opener
 "map <C-o> :CommandT<CR>
 "map <C-o> :Unite file_rec<CR>i
