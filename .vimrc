@@ -5,6 +5,21 @@ set smarttab
 set expandtab
 
 
+let s:dein_path = expand('~/.vim/misc/dein.vim')
+execute 'set runtimepath^=' . s:dein_path
+
+call dein#begin(expand('~/.cache/dein'))
+
+call dein#add(expand('~/.vim/misc/dein.vim/'))
+call dein#add('racer-rust/vim-racer')
+
+
+call dein#end()
+
+
+
+
+
 
 set shell=/bin/sh
 call pathogen#infect()
@@ -57,7 +72,7 @@ imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
 "t for tagbar
-map t :TagbarToggle<CR>
+nnoremap t :TagbarToggle<CR>
 "Ctrl+O for CommandT file opener
 "map <C-o> :CommandT<CR>
 "map <C-o> :Unite file_rec<CR>i
@@ -70,7 +85,7 @@ set wildignore+=*.o,*.obj,.git,*.pyc
 
 "color schema
 "source ~/.vim/misc/vim-distinguished/colors/distinguished.vim
-source ~/.vim/misc/colors/burnttoast256.vim
+"source ~/.vim/misc/colors/burnttoast256.vim
 
 "snippets
 let g:UltiSnipsExpandTrigger="<C-e>"
