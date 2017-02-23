@@ -12,7 +12,7 @@ execute 'set runtimepath^=' . s:dein_path
 call dein#begin(expand('~/.cache/dein'))
 
 call dein#add(expand('~/.vim/misc/dein.vim/'))
-call dein#add('racer-rust/vim-racer')
+"call dein#add('racer-rust/vim-racer')
 
 
 call dein#end()
@@ -43,7 +43,7 @@ source ~/.vim/menu.vim
 set wildmenu
 set cpo-=<
 set wcm=<C-Z>
-map m :emenu Utils.<C-Z>
+map <C-m> :emenu Utils.<C-Z>
 
 
 "use mouse in normal mode only
