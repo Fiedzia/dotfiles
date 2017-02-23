@@ -3,7 +3,8 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 set expandtab
-
+syntax on
+colorscheme industry
 
 let s:dein_path = expand('~/.vim/misc/dein.vim')
 execute 'set runtimepath^=' . s:dein_path
