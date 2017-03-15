@@ -10,6 +10,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'nvie/vim-flake8'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -27,7 +28,7 @@ set expandtab
 set pastetoggle=<F2>
 
 "F3 for nerdtree
-map <F3> :NERDTreeToggle<CR>
+map <F3> :NERDTreeTabsToggle<CR>
 
 
 "The following trick is a really small one, but a super-efficient one, since it strips off two full keystrokes from almost every Vim command:
