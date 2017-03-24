@@ -55,3 +55,6 @@ nnore <A-Left> gT
 
 "t for tagbar
 nnoremap t :TagbarToggle<CR>
+
+"insert debugger call for Ctrl+d
+map <C-d> i<ESC>[8~<CR>import pudb; pudb.set_trace()
