@@ -58,3 +58,8 @@ nnoremap t :TagbarToggle<CR>
 
 "insert debugger call for Ctrl+d
 map <C-d> i<ESC>[8~<CR>import pudb; pudb.set_trace()
+
+"flake8 settings
+let g:flake8_show_in_gutter=1
+"run flake8 on write
+autocmd BufWritePost *.py call Flake8()
