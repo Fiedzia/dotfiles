@@ -14,7 +14,7 @@ def setup_git():
 
 
 BASEDIR = os.path.dirname(os.path.realpath(__file__))
-for fname in ('.vimrc', '.vim', '.tmux.conf', '.config/fish/config.fish'):
+for fname in ('.vimrc', '.vim', '.tmux.conf', '.config/fish/config.fish', '.config/flake8'):
     full_name = os.path.join(os.path.expanduser('~/'), fname)
     print('Processing {0}'.format(full_name))
     if os.path.exists(full_name):
